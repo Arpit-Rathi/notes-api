@@ -1,0 +1,73 @@
+Functionality - 
+
+    - notes - create, read, update, delete
+    - labels - create, read, update, delete
+    - user - create, read, update, delete
+    - login/logout api
+
+User comes to the app - signup using email and password, with email verification
+Login using username and password
+User can - 
+    create a new note
+    archive note
+    delete note
+    edit note
+    view his notes
+    view note in detail
+    create new label
+    edit label
+    update label
+    delete label
+    can update his profile - email id, password, username
+    logout
+
+API end points - 
+
+    POST        /auth/login
+    POST        /auth/verify
+
+    Below endpoints can only be called if a user is logged in and
+    internally only fetches data of logged in user
+
+    GET         /user/{userId}
+    POST        /user
+    PUT         /user
+    DELETE      /user/{userId}
+    
+    GET         /notes?label=[]&archived=[true/false]&sort=[asc/desc]
+    GET         /notes/{noteId}
+    POST        /notes
+    PUT         /notes
+    DELETE      /notes/{noteId}
+    
+    GET         /labels
+    GET         /labels/{labelId}
+    POST        /labels
+    PUT         /labels
+    DELETE      /labels/{labelId}
+    
+
+Models - 
+
+user - 
+    id
+    username
+    email
+    password
+    status
+
+notes - 
+    id
+    userId
+    labelId
+    data
+        title
+        summary
+        content
+    isArchived
+
+label - 
+    id
+    userId
+    title
+    color

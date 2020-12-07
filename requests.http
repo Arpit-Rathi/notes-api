@@ -13,3 +13,7 @@ Content-Type: application/json
     "content": "Adding some more test content",
     "isArchived": false
 }
+
+###
+
+GET http://localhost:3000/notes/5fce5314980b2b2b2b63ae14

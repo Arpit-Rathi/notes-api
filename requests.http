@@ -1,0 +1,15 @@
+GET http://localhost:3000/notes
+
+###
+
+POST http://localhost:3000/notes
+Content-Type: application/json
+
+{
+    "userId": "21",
+    "labelId": "1",
+    "title": "Note 2",
+    "summary": "Test summary 1",
+    "content": "Adding some more test content",
+    "isArchived": false
+}

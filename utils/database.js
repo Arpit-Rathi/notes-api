@@ -13,7 +13,9 @@ const mongoConnect = (callback) => {
         console.log('Connected to database');
         callback();
     })
-    .catch(err => console.log(err))
+    .catch(err => {
+        console.log(err)
+    })
 }
 
 const getDB = () => {

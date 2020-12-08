@@ -2,10 +2,14 @@ const router = require('express').Router();
 
 const notesController = require('../controllers/notes');
 
-router.post('/', notesController.createNote);
+// router.get('/:noteId', notesController.fetchNote);
 
-router.get('/:noteId', notesController.fetchNote);
+// router.get('/', notesController.getAllNotes);
 
-router.get('/', notesController.getAllNotes);
+// router.post('/', notesController.createNote);
+
+// router.patch('/', notesController.editNote);
+
+// router.patch('/archive/:noteId', notesController.archiveNote);
 
 module.exports = router;

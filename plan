@@ -32,18 +32,18 @@ API end points -
     GET         /user/{userId}
     POST        /user
     PUT         /user
-    DELETE      /user/{userId}
+    PATCH       /user/deactivate/{userId}
     
     GET         /notes?label=[]&archived=[true/false]&sort=[asc/desc]
     GET         /notes/{noteId}
     POST        /notes
-    PUT         /notes
-    DELETE      /notes/{noteId}
+    PATCH       /notes
+    PATCH       /notes/archive/{noteId}
     
     GET         /labels
     GET         /labels/{labelId}
     POST        /labels
-    PUT         /labels
+    PATCH       /labels
     DELETE      /labels/{labelId}
     
 

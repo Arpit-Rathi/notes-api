@@ -19,10 +19,9 @@ app.use((error, req, res, next) => {
     const message = error.status ? error.message : 'Internal server error';
     const data = error.data || {};
     res
-    .status(error.status)
+    .status(status)
     .json({
-        message: message,
-        data: data
+        message: message
     })
 })
 

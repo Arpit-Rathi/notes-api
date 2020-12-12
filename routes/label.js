@@ -2,14 +2,14 @@ const router = require('express').Router();
 
 const labelController = require('../controllers/label');
 
-// router.get('/', labelController.fetchAll);
+router.get('/', labelController.fetchAll);
 
-// router.get('/:labelId', labelController.fetchLabel);
+router.get('/:labelId', labelController.fetchLabelById);
 
-// router.post('/', labelController.createLabel);
+router.post('/', labelController.createLabel);
 
-// router.patch('/', labelController.editLabel);
+router.patch('/', labelController.editLabel);
 
-// router.patch('/:userId', labelController.deleteLabel);
+router.delete('/:labelId', labelController.deleteLabel);
 
 module.exports = router;
